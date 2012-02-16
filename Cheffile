@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'ruby',
+  :git => 'http://github.com/antoinerg/chef-ruby1.9.git'
+  
+cookbook 'git'
+# cookbook 'postgresql',
+#   :git => 'https://github.com/findsyou/cookbooks',
+#   :ref => 'postgresql-improvements'
