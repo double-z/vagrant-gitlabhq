@@ -5,8 +5,13 @@ site 'http://community.opscode.com/api/v1'
 
 cookbook 'ruby',
   :git => 'http://github.com/antoinerg/chef-ruby1.9.git'
-  
+
+cookbook 'apache2',
+  :git => 'http://github.com/antoinerg/apache2.git'
+
 cookbook 'git'
+
+cookbook 'passenger_apache2'
 # cookbook 'postgresql',
 #   :git => 'https://github.com/findsyou/cookbooks',
 #   :ref => 'postgresql-improvements'

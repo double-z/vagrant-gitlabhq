@@ -6,8 +6,18 @@ SITE
     git (0.10.0)
       runit (>= 0.0.0)
       yum (>= 0.0.0)
+    passenger_apache2 (0.99.2)
+      apache2 (>= 1.0.4)
+      build-essential (>= 0.0.0)
     runit (0.14.2)
     yum (0.5.2)
+
+GIT
+  remote: http://github.com/antoinerg/apache2.git
+  ref: master
+  sha: 586cd7c25562b5a73f223797408b2c402a599c8a
+  specs:
+    apache2 (1.0.8)
 
 GIT
   remote: http://github.com/antoinerg/chef-ruby1.9.git
@@ -19,6 +29,8 @@ GIT
       build-essential (>= 0.0.0)
 
 DEPENDENCIES
+  apache2 (>= 0)
   git (>= 0)
+  passenger_apache2 (>= 0)
   ruby (>= 0)
 
